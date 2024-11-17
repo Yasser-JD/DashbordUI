@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="18dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingBottom="16dp">
+
+    <ImageButton
+        android:id="@+id/menu_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="Options Menu"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/ic_menu_40"
+        android:background="?attr/selectableItemBackgroundBorderless" />
+
+    <TextView
+        android:id="@+id/toolbar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_toStartOf="@+id/settings_icon"
+        android:layout_toEndOf="@+id/menu_icon"
+        android:text="Home"
+        android:textColor="#595085"
+        android:textSize="19sp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/settings_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:contentDescription="Settings"
+        android:src="@drawable/ic_settings_40"
+        android:background="?attr/selectableItemBackgroundBorderless" />
+
+</RelativeLayout>
